@@ -1,0 +1,3 @@
+kpi:
+    resource: "@KpiBundle/Controller"
+    type: annotation

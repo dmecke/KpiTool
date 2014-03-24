@@ -1,0 +1,7 @@
+services:
+    cunningsoft.kpi.kpi_service:
+        class: Cunningsoft\KpiBundle\Services\KpiService
+
+    cunningsoft.kpi.task_service:
+        class: Cunningsoft\KpiBundle\Services\TaskService
+        arguments: [@buzz, @doctrine.orm.entity_manager, @cunningsoft.kpi.kpi_service]
